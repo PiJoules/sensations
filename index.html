@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ayy lmao</title>
+
+        <style type="text/css">
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            body {
+                background-color: rgba(255,255,255,1);
+            }
+
+            #touchmovezone {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: transparent;
+            }
+
+            #lenny {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                width: 600px;
+                margin-left: -300px;
+                margin-top: -105px;
+            }
+
+            .eye {
+                position: fixed;
+                background-color: transparent;
+            }
+
+            #myCanvas {
+                top: 0;
+                left: 50%;
+                top: 50%;
+                margin-left: -177px;
+                margin-top: -110px;
+            }
+
+            #myCanvas2 {
+                top: 0;
+                right: 50%;
+                top: 50%;
+                margin-right: -237px;
+                margin-top: -110px;
+            }
+
+            #test {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                height: 100px;
+                text-align: center;
+                margin-left: -70px;
+                margin-top: -150px;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="lenny" src="rsz_lenny2.png" />
+        <h1 id="test" style="font-family: 'Comic Sans MS' !important;">Feel me</h1>
+
+        <canvas class="eye" id="myCanvas" width="100" height="100">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        <canvas class="eye" id="myCanvas2" width="100" height="100">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        <canvas id="touchmovezone">
+            Canvas element not supported.
+        </canvas>
+        <audio id="song" src="song.mp3" preload="auto"></audio>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
